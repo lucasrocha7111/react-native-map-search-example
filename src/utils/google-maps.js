@@ -8,7 +8,7 @@ export class GoogleMapsUtils {
 
     getNearbyPlaces = async (params) => {
         let { latitude, longitude } = params
-        return await axios.get(`${GOOGLE_MAP_API}/place/nearbysearch/json?location=${latitude},${longitude}&radius=1500&key=${GOOGLE_API_KEY}`)
+        return await axios.get(`${GOOGLE_MAP_API}/place/nearbysearch/json?location=${latitude},${longitude}&rankby=distance&key=${GOOGLE_API_KEY}`)
     }
 
     getPlacesBySearch = async (params) => {

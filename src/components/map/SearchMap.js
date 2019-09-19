@@ -35,6 +35,7 @@ export class SearchMap extends React.Component {
                             this._onSearch(value)
                         }}
                         clearTextOnFocus={true}
+                        selectTextOnFocus={true}
                     />
                 </View>
                 <View style={[Styles.center, this.state.predictionList.length ? {minHeight: 300, width: '100%', marginHorizontal: 4, paddingHorizontal: 10, backgroundColor: Colors.white, borderRadius: 10, top: -10} : {zIndex: -1}]}>
@@ -74,9 +75,9 @@ export class SearchMap extends React.Component {
         if(this.timeout !== null) {
             clearInterval(this.timeout)
         }
-        this.timeout = setTimeout(async () => {
-            await this._getSearchResults(value)
-        }, 800)
+        this.timeout = setTimeout(() => {
+            this._getSearchResults(value)
+        }, 500)
         return this.timeout
     }
 
@@ -84,12 +85,12 @@ export class SearchMap extends React.Component {
         let res = await this.mapUtils.getPlacesBySearch(value)
         if(res.data.status === 'OK') {
             let list = res.data.predictions
-            let predictionList = await list.map((data) => {
+            let predictionList = list.map((data) => {
                 return {
                     text: data.description
                 }
             })
-            await this.setState({
+            this.setState({
                 predictionList: predictionList
             })
         }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1568907509938" clover="3.2.0">
-  <project timestamp="1568907509938" name="All files">
-    <metrics statements="101" coveredstatements="44" conditionals="18" coveredconditionals="4" methods="36" coveredmethods="11" elements="155" coveredelements="59" complexity="0" loc="101" ncloc="101" packages="5" files="8" classes="8"/>
+<coverage generated="1568910281360" clover="3.2.0">
+  <project timestamp="1568910281360" name="All files">
+    <metrics statements="101" coveredstatements="49" conditionals="18" coveredconditionals="5" methods="36" coveredmethods="14" elements="155" coveredelements="68" complexity="0" loc="101" ncloc="101" packages="5" files="8" classes="8"/>
     <package name="screens.auth">
       <metrics statements="16" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="5"/>
       <file name="Auth.js" path="/Users/lucasrocha/work/playground/react-native/invillia-test/src/screens/auth/Auth.js">
@@ -40,7 +40,7 @@
       </file>
     </package>
     <package name="screens.map">
-      <metrics statements="61" coveredstatements="16" conditionals="16" coveredconditionals="2" methods="23" coveredmethods="3"/>
+      <metrics statements="61" coveredstatements="21" conditionals="16" coveredconditionals="3" methods="23" coveredmethods="6"/>
       <file name="CarouselMap.js" path="/Users/lucasrocha/work/playground/react-native/invillia-test/src/screens/map/CarouselMap.js">
         <metrics statements="4" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="13" count="0" type="stmt"/>
@@ -49,38 +49,38 @@
         <line num="29" count="0" type="stmt"/>
       </file>
       <file name="Map.js" path="/Users/lucasrocha/work/playground/react-native/invillia-test/src/screens/map/Map.js">
-        <metrics statements="31" coveredstatements="10" conditionals="6" coveredconditionals="1" methods="11" coveredmethods="2"/>
+        <metrics statements="31" coveredstatements="15" conditionals="6" coveredconditionals="2" methods="11" coveredmethods="5"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
+        <line num="38" count="20" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
         <line num="54" count="0" type="stmt"/>
-        <line num="64" count="1" type="stmt"/>
+        <line num="64" count="2" type="stmt"/>
         <line num="65" count="0" type="stmt"/>
         <line num="66" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="67" count="0" type="stmt"/>
         <line num="69" count="0" type="stmt"/>
         <line num="74" count="0" type="stmt"/>
         <line num="75" count="0" type="stmt"/>
-        <line num="78" count="1" type="stmt"/>
+        <line num="78" count="2" type="stmt"/>
         <line num="79" count="0" type="stmt"/>
         <line num="80" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="81" count="0" type="stmt"/>
         <line num="87" count="0" type="stmt"/>
         <line num="88" count="0" type="stmt"/>
-        <line num="92" count="1" type="stmt"/>
-        <line num="93" count="0" type="stmt"/>
-        <line num="94" count="0" type="stmt"/>
-        <line num="95" count="0" type="stmt"/>
-        <line num="103" count="0" type="stmt"/>
+        <line num="92" count="2" type="stmt"/>
+        <line num="93" count="1" type="stmt"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="95" count="20" type="stmt"/>
+        <line num="103" count="1" type="stmt"/>
       </file>
       <file name="SearchMap.js" path="/Users/lucasrocha/work/playground/react-native/invillia-test/src/screens/map/SearchMap.js">
         <metrics statements="26" coveredstatements="6" conditionals="8" coveredconditionals="1" methods="8" coveredmethods="1"/>
@@ -132,13 +132,13 @@
       <file name="google-maps.js" path="/Users/lucasrocha/work/playground/react-native/invillia-test/src/utils/google-maps.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="5" count="3" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
       </file>
     </package>

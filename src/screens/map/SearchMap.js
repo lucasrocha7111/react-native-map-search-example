@@ -29,7 +29,6 @@ export class SearchMap extends React.Component {
                         placeholder={'Digite uma localização'} 
                         value={this.state.search}
                         onChangeText={(value) => {
-                            console.log('on change ', value)
                             this.setState({
                                 search: value
                             })
@@ -76,19 +75,24 @@ export class SearchMap extends React.Component {
             clearInterval(this.timeout)
         }
         this.timeout = setTimeout(async () => {
-            let res = await this.mapUtils.getPlacesBySearch(value)
-            if(res.data.status === 'OK') {
-                let list = res.data.predictions
-                let predictionList = list.map((data) => {
-                    return {
-                        text: data.description
-                    }
-                })
-                this.setState({
-                    predictionList: predictionList
-                })
-            }
+            await this._getSearchResults(value)
         }, 800)
+        return this.timeout
+    }
+
+    _getSearchResults = async (value) => {
+        let res = await this.mapUtils.getPlacesBySearch(value)
+        if(res.data.status === 'OK') {
+            let list = res.data.predictions
+            let predictionList = await list.map((data) => {
+                return {
+                    text: data.description
+                }
+            })
+            await this.setState({
+                predictionList: predictionList
+            })
+        }
     }
 
 }

@@ -2,8 +2,8 @@ import React from 'react'
 import {
     View
 } from 'react-native'
-import { Map, LATITUDE_DELTA, LONGITUDE_DELTA } from '../map/Map'
-import { SearchMap } from '../map/SearchMap'
+import { Map, LATITUDE_DELTA, LONGITUDE_DELTA } from '../../components/map/Map'
+import { SearchMap } from '../../components/map/SearchMap'
 
 export class Home extends React.Component {
 

@@ -1,7 +1,7 @@
 
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Map } from '../../src/screens/map/Map'
+import { Map } from '../../src/components/map/Map'
 import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 

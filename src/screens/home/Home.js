@@ -19,14 +19,12 @@ export class Home extends React.Component {
     }
 
     _onSelectAddress = (region) => {
-        console.log('on select address', region)
         let regionParams = {
             latitude: region.latitude,
             longitude: region.longitude,
             latitudeDelta: LATITUDE_DELTA,
             longitudeDelta: LONGITUDE_DELTA
         }
-        console.log('region params ', regionParams)
         this.mapComponent.map.animateToRegion(regionParams, 1000)
         this.mapComponent.getNearbyPlaces(region)
     }

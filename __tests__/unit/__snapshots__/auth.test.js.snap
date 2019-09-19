@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Auth /> renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+        "width": "100%",
+      },
+      Object {
+        "backgroundColor": "#f1f1f1",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 20,
+          "width": "100%",
+        },
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "alignSelf": "center",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignContent": "center",
+            "alignItems": "center",
+            "alignSelf": "center",
+          },
+        ]
+      }
+    >
+      <Image
+        source={1}
+        style={
+          Array [
+            Object {
+              "height": 100,
+              "marginBottom": 40,
+              "width": 100,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignContent": "center",
+            "alignItems": "center",
+            "alignSelf": "center",
+          },
+          Object {
+            "justifyContent": "center",
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#4267b2",
+            "borderColor": "#676e7d",
+            "borderRadius": 5,
+            "borderWidth": 0.8,
+            "color": undefined,
+            "fontFamily": "lato",
+            "marginBottom": 20,
+            "opacity": 1,
+            "padding": 14,
+            "paddingHorizontal": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontFamily": "lato",
+              },
+              Object {
+                "color": "#fff",
+              },
+            ]
+          }
+        >
+          Entrar com Facebook
+        </Text>
+      </View>
+      <TextInput
+        allowFontScaling={true}
+        placeholder="Email"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderColor": "#676e7d",
+              "borderRadius": 5,
+              "borderWidth": 0.7,
+              "color": "#676e7d",
+              "fontFamily": "lato",
+              "fontSize": 14,
+              "height": 38,
+              "marginBottom": 20,
+              "paddingHorizontal": 10,
+              "width": "100%",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+      />
+      <TextInput
+        allowFontScaling={true}
+        placeholder="Senha"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "borderColor": "#676e7d",
+              "borderRadius": 5,
+              "borderWidth": 0.7,
+              "color": "#676e7d",
+              "fontFamily": "lato",
+              "fontSize": 14,
+              "height": 38,
+              "marginBottom": 20,
+              "paddingHorizontal": 10,
+              "width": "100%",
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+      />
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignContent": "center",
+            "alignItems": "center",
+            "alignSelf": "center",
+            "borderColor": "#676e7d",
+            "borderRadius": 5,
+            "borderWidth": 0.8,
+            "marginBottom": 20,
+            "opacity": 1,
+            "padding": 14,
+            "paddingHorizontal": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontFamily": "lato",
+              },
+              Object {
+                "alignContent": "center",
+                "alignItems": "center",
+                "alignSelf": "center",
+              },
+              Object {
+                "color": "#676e7d",
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Entrar
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

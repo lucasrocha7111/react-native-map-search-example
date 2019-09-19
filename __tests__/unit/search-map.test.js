@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { SearchMap } from '../../src/screens/map/SearchMap'
+import { SearchMap } from '../../src/components/map/SearchMap'
 import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 

@@ -7,14 +7,15 @@ import * as Permissions from 'expo-permissions'
 import { CarouselMap } from './CarouselMap'
 import { GoogleMapsUtils } from '../../utils/google-maps'
 
-export const LATITUDE_DELTA = 0.0110
-export const LONGITUDE_DELTA = 0.0120
+export const LATITUDE_DELTA = 0.0010
+export const LONGITUDE_DELTA = 0.0020
 
 export class Map extends React.Component {
 
     state = {
         location: null,
-        markers: []
+        markers: [],
+        requestingPermisson: false
     }
 
     map = null
@@ -62,17 +63,28 @@ export class Map extends React.Component {
     }
 
     _getLocationAsync = async () => {
-        let { status } = await Permissions.askAsync(Permissions.LOCATION);
-        if (status !== 'granted') {
-            Alert.alert('Localização', 'Precisamos da sua localização', [
-                {text: 'Ok', onPress:() => {
-                    this._getLocationAsync()
-                }}
-            ])
+        if(!this.state.requestingPermisson) {
+            let { status } = await Permissions.askAsync(Permissions.LOCATION)
+            this.setState({
+                requestingPermisson: true
+            })
+            if (status !== 'granted') {
+                this.setState({
+                    requestingPermisson: false
+                })
+                setTimeout(() => {
+                    Alert.alert('Localização', 'Precisamos da sua localização', [
+                        {text: 'Ok', onPress:() => {
+                            this._getLocationAsync()
+                        }}
+                    ])
+                }, 50)
+            } else {
+                let location = await Location.getCurrentPositionAsync({accuracy: Location.Accuracy.Balanced, maximumAge: 10000})
+                this.setState({ location })
+            }
         }
-    
-        let location = await Location.getCurrentPositionAsync({accuracy: Location.Accuracy.Balanced, maximumAge: 10000})
-        this.setState({ location })
+        
     }
 
     getUserLocation = () => {

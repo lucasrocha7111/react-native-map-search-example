@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchMap /> renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "paddingHorizontal": 30,
+        "position": "absolute",
+        "top": 70,
+        "width": "100%",
+        "zIndex": 2,
+      },
+    ]
+  }
+>
+  <View>
+    <TextInput
+      allowFontScaling={true}
+      clearTextOnFocus={true}
+      onChangeText={[Function]}
+      placeholder="Digite uma localização"
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#fff",
+            "borderColor": "#fff",
+            "borderRadius": 20,
+            "borderWidth": 0.7,
+            "color": "#676e7d",
+            "elevation": 3,
+            "fontFamily": "lato",
+            "fontSize": 14,
+            "height": 42,
+            "marginBottom": 20,
+            "paddingHorizontal": 20,
+            "shadowColor": "#000",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 2,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 4,
+            "width": "100%",
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "alignSelf": "center",
+        },
+        Object {
+          "zIndex": -1,
+        },
+      ]
+    }
+  >
+    <RCTScrollView
+      keyboardShouldPersistTaps="always"
+    >
+      <View />
+    </RCTScrollView>
+  </View>
+</View>
+`;

@@ -1,6 +1,7 @@
 
 import React from 'react'
 import renderer from 'react-test-renderer'
+import { Map } from '../../src/screens/map/Map'
 
 jest.mock('react-native-maps', () => {              
     const React = require.requireActual('react')
@@ -36,7 +37,6 @@ describe('<Map />', () => {
 
     it('renders correctly', () => {
         const tree = renderer.create(<Map />).toJSON()
-        console.log('snap ', tree)
         expect(tree).toMatchSnapshot()
     })
 })

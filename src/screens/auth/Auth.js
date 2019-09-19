@@ -5,7 +5,8 @@ import {
     TextInput,
     TouchableOpacity,
     Text,
-    ActivityIndicator
+    ActivityIndicator,
+    Alert
 } from 'react-native'
 import * as Facebook from 'expo-facebook'
 import { FACEBOOK_APP_ID } from '../../utils/constants'
@@ -66,10 +67,9 @@ export class Auth extends React.Component {
             let { type, token } = await Facebook.logInWithReadPermissionsAsync(FACEBOOK_APP_ID, {
                 permissions: ['public_profile'],
             })
-            console.log('data'. type, token)
             this.props.navigation.push('home')
         } catch(err) {
-            console.log('Facebook error ', err)
+            Alert.alert('Error ', err.message)
         }
     }
 
